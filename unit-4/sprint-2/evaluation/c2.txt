@@ -1,0 +1,81 @@
+Explain about String, StringBuffer, and StringBuilder class with an example. Explain also
+about toString() method in java.
+
+
+1. String
+
+String is primitive datatype.
+There are two ways to create string
+1. String str = "welcome...";    //method-I
+2. String str = new String("welcome..");   //method-II
+
+there is a little difference b/w both waysExplain about String, StringBuffer, and StringBuilder class with an example. Explain also
+about toString() method in java.
+
+
+1. String
+
+String is primitive datatype.
+There are two ways to create string
+1. String str = "welcome...";    //method-I
+2. String str = new String("welcome..");   //method-II
+
+there is a little difference b/w both ways
+==> in method-I, only one object will be created in heap area of RAM
+==> in method-II, two objects will be created in heap area of RAM.
+
+2.StringBuffer v/s StringBuilder
+
+Actually both are similar, the only difference is StringBuilder is more faster 
+than StringBuffer.
+You can use any of two according to your problem.
+
+
+3.toString()
+
+It is a predefined method which is belong to java.lang package.
+This method is used if we want to convert object,array,primitive datatypes to string.
+
+
+==> in method-I, only one object will be created in heap area of RAM
+==> in method-II, two objects will be created in heap area of RAM.
+
+2.StringBuffer v/s StringBuilderExplain about String, StringBuffer, and StringBuilder class with an example. Explain also
+about toString() method in java.
+
+
+1. String
+
+String is primitive datatype.
+There are two ways to create string
+1. String str = "welcome...";    //method-I
+2. String str = new String("welcome..");   //method-II
+
+there is a little difference b/w both ways
+==> in method-I, only one object will be created in heap area of RAM
+==> in method-II, two objects will be created in heap area of RAM.
+
+2.StringBuffer v/s StringBuilder
+
+Actually both are similar, the only difference is StringBuilder is more faster 
+than StringBuffer.
+You can use any of two according to your problem.
+
+
+3.toString()
+
+It is a predefined method which is belong to java.lang package.
+This method is used if we want to convert object,array,primitive datatypes to string.
+
+
+
+Actually both are similar, the only difference is StringBuilder is more faster 
+than StringBuffer.
+You can use any of two according to your problem.
+
+
+3.toString()
+
+It is a predefined method which is belong to java.lang package.
+This method is used if we want to convert object,array,primitive datatypes to string.
+

@@ -1,0 +1,83 @@
+package com.masai_01;
+
+public class Book {
+
+	private int isbn;
+	private String bookName;
+	private String author;
+
+	public void setIsbn(int isbn)
+	{
+		this.isbn = isbn;
+	}
+
+	public int getIsbn()
+	{
+		return isbn;
+	}
+
+	public void setBookName(String bookName)
+	{
+		this.bookName = bookName;
+	}
+
+	public String getBookName()
+	{
+		return bookName;
+	}
+
+	public void setAuthor(String author)
+	{
+		this.author = author;
+	}
+
+	public String getAuthor()
+	{
+		return author;
+	}
+
+
+package com.masai_01;
+
+import java.util.List;
+
+public class Library {
+
+	void addBook(Book book)
+	{
+
+	}
+
+	boolean isEmpty()
+	{
+		return false;
+	}
+
+	List<Book> viewAllBooks()
+	{
+		return null;
+	}
+
+	List<Book> viewBooksByAuthor(String author)
+	{
+		return null;
+	}
+
+	int countNoOfBook(String bName)
+	{
+		return 0;
+	}
+}
+
+package com.masai_01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("1. Add Book \n " + "2. Display all book details \n" + "3. Search book by author \n" + "4. Count number of books-by book name \n" + "5. Exit");
+
+	}
+
+}

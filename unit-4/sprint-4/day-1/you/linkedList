@@ -1,0 +1,10 @@
+const LinkedListNode = class {
+    constructor(nodeData) {
+        this.data = nodeData;
+        this.next = null;
+    }
+};
+
+function nth_node(head,n){
+    
+}

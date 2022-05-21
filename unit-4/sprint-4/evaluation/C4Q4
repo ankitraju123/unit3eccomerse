@@ -1,0 +1,117 @@
+package evalaution4.q4;
+
+public class Employee implements Comparable<Employee>{
+
+	private int empId;
+	private String empName;
+	private int salary;
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public Employee(int empId, String empName, int salary) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", salary=" + salary + "]";
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public int compareTo(Employee o) {
+		if(this.getSalary()>o.getSalary()) {
+			return +1;
+		}else{
+			return -1;
+		}
+
+	}
+}
+------------------------------------------------------------------
+package evalaution4.q4;
+
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Student> s1 = new ArrayList<>();
+		List<Employee> e1 = new ArrayList<>();
+
+		s1.add(new Student(12,"Bigyan",200));
+		s1.add(new Student(13,"Bigyan",250));
+		s1.add(new Student(14,"Niranjan",300));
+		s1.add(new Student(15,"Afroz",220));
+		s1.add(new Student(16,"Vishal",230));
+
+		for(Student s:s1) {
+			e1.add(new Employee(s.getRollNo(),s.getName(),s.getMarks()*1000));
+		}
+		System.out.println(e1);
+
+	}
+
+}
+---------------------------------------------------------------------------------------
+package evalaution4.q4;
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	private int marks;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollNo=" + rollNo + ", name=" + name + ", marks=" + marks + "]";
+	}
+	public Student(int rollNo, String name, int marks) {
+		super();
+		this.rollNo = rollNo;
+		this.name = name;
+		this.marks = marks;
+	}
+
+}
